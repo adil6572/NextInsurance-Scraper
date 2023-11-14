@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 with open('sitemap.txt', 'r') as fp:
     URLS = fp.read().split('\n')
 
-URLS=URLS[:100]
+# URLS=URLS[:100]
 OUTPUT_CSV_FILENAME = 'agents_data.csv'
 
 def extract_text(element, selector):
